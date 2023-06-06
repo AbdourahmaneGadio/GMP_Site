@@ -17,13 +17,14 @@
     <!-- Présentation -->
     <section class="container w-1/2 mx-auto mt-8">
         <h3>Présentation</h3>
-        <x-trait-titre>        </x-trait-titre>
+        <x-trait-titre> </x-trait-titre>
 
         <div class="mt-4">
-            <video height="759" controls>
-                <source src="movie.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la lecture de cette vidéo
-            </video>
+                <iframe class="responsive-iframe"
+                src="https://www.youtube.com/embed/M7lc1UVf-VE" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+
         </div>
         <div class="mt-4">
             <p>Le diplômé des départements Génie Mécanique et Productique des I.U.T. est un généraliste de la mécanique.
@@ -43,26 +44,24 @@
     <!-- Les formations du département GMP -->
     <section class="container w-1/2 mx-auto mt-12">
         <h3>Les formations du département GMP</h3>
-        <x-trait-titre>        </x-trait-titre>
+        <x-trait-titre> </x-trait-titre>
 
-        <div>
-            <div class="rounded-lg flex mt-8 h-40" style="background-color: #DDA15E;">
-                <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
-                <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
-            </div>
-            <x-separateur> </x-separateur>
+
+        <div class="flex mt-8 h-40" style="background-color: #DDA15E; border-radius:46px;">
+            <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
+            <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
         </div>
-        <div class="rounded-lg flex mt-8 h-40" style="background-color: #DDA15E;">
+        <x-separateur> </x-separateur>
+
+        <div class="flex mt-8 h-40" style="background-color: #DDA15E; border-radius:46px;">
             <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
             <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
 
         </div>
         <x-separateur> </x-separateur>
-        </div>
-        <div class="rounded-lg flex mt-8 h-40" style="background-color: #DDA15E;">
+        <div class="flex mt-8 h-40" style="background-color: #DDA15E; border-radius:46px;">
             <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
             <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
-        </div>
         </div>
 
     </section>
