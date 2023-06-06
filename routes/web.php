@@ -37,3 +37,7 @@ Route::get('/gmp', function () {
 Route::get('/licencesPro', function () {
     return view('licencesPro');
 });
+
+Route::get('/lp-mief', function () {
+    return view('licencesPro.lpMief');
+});
