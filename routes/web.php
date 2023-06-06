@@ -29,3 +29,11 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/gmp', function () {
+    return view('departementGMP');
+});
+
+Route::get('/licencesPro', function () {
+    return view('licencesPro');
+});
