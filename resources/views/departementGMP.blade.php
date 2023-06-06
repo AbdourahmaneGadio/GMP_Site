@@ -1,3 +1,17 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Présentation département GMP</title>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body class="font-medium" style="font-family: Poppins; color:#606C38; background-color: #F5F5F5">
 @include('layouts.header')
 
 
@@ -41,17 +55,25 @@
         <x-separateur> </x-separateur>
 
         <div class="flex mt-8 h-40" style="background-color: #DDA15E; border-radius:46px;">
-            <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
-            <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
+            <a href="{{ url('/lp-mief') }}">
+                <div class="text-center m-auto">
+                    <span>LP Métiers du BTP : bâtiment et construction – Parcours : Management et ingénierie des entreprises de façades</span>
+                </div>
+                <div class="m-auto"><img src="" alt="Image de la licence professionnelle MIEF" srcset="">
+            </a>
+        </div>
 
         </div>
         <x-separateur> </x-separateur>
-        <div class="flex mt-8 h-40" style="background-color: #DDA15E; border-radius:46px;">
+        <div class="flex mt-8 h-40 mb-8" style="background-color: #DDA15E; border-radius:46px;">
             <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
             <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
         </div>
 
     </section>
     <!-- Les formations du département GMP -->
-
     @include('layouts.footer')
+
+</body>
+
+</html>
