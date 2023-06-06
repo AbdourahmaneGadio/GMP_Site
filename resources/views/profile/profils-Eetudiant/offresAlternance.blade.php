@@ -24,7 +24,7 @@
         <li> > </li>
         <li>ESPACE ETUDIANT </li>
         <li> > </li>
-        <li>offres D'ALTERNANCE</li>
+        <li>OFFRES D'ALTERNANCE</li>
     </ul>
 
 
