@@ -41,8 +41,8 @@ Route::get('/edt', function () {
 Route::get('/Mesnotes', function () {
     return view('profile.profils-Eetudiant.edt');
 });
-Route::get('/offresAlterance', function () {
-    return view('profile.profils-Eetudiant.offresAlterance');
+Route::get('/offresAlternance', function () {
+    return view('profile.profils-Eetudiant.offresAlternance');
 });
 
 /*Fin de la partie Ee */
