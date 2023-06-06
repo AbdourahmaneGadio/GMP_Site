@@ -33,6 +33,19 @@ require __DIR__.'/auth.php';
 Route::get('/gmp', function () {
     return view('departementGMP');
 });
+/*profil -Espace Etudiant*/
+Route::get('/edt', function () {
+    return view('profile.profils-Eetudiant.edt');
+});
+
+Route::get('/Mesnotes', function () {
+    return view('profile.profils-Eetudiant.edt');
+});
+Route::get('/offresAlterance', function () {
+    return view('profile.profils-Eetudiant.offresAlterance');
+});
+
+/*Fin de la partie Ee */
 
 Route::get('/licencesPro', function () {
     return view('licencesPro');
