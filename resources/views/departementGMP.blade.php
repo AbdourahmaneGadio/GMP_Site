@@ -1,17 +1,4 @@
-<!doctype html>
-<html>
-
-<head>
-    <title>Présentation département GMP</title>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body class="font-medium" style="font-family: Poppins; color:#606C38; background-color: #F5F5F5">
+@include('layouts.header')
 
 
     <!-- Présentation -->
@@ -67,6 +54,4 @@
     </section>
     <!-- Les formations du département GMP -->
 
-</body>
-
-</html>
+    @include('layouts.footer')
