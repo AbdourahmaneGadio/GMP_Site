@@ -43,7 +43,7 @@
         <x-trait-titre> </x-trait-titre>
         <!-- Semestre 1 -->
 
-        <div class="text-center mt-5">
+        <div class="text-center my-12">
             <div>
                 <h4>Semestre 1</h4>
             </div>
@@ -55,7 +55,7 @@
         <!-- Semestre 1 -->
         <!-- Semestre 2 -->
 
-        <div class="text-center mt-5">
+        <div class="text-center my-12">
             <div>
                 <h4>Semestre 2</h4>
             </div>
@@ -67,7 +67,7 @@
         <!-- Semestre 2 -->
         <!-- Semestre 1 et 2-->
 
-        <div class="text-center mt-5">
+        <div class="text-center my-12">
             <div>
                 <h4>Semestre 1 et Semestre 2</h4>
             </div>
@@ -85,8 +85,11 @@
         <x-trait-titre> </x-trait-titre>
         <div class="mt-4">
             <p>L’objectif est de former des cadres techniques polyvalents en management et en ingénierie du second œuvre, pour répondre à un besoin de la profession de l’Enveloppe du Bâtiment.
+            </p>
+            <p>
 
-                Cette formation permet aux candidats ayant un profil scientifique et/ou technique d’acquérir un métier et un emploi immédiat, les diplômés sont embauchés à 100% dans le mois qui suit l’obtention du diplôme.
+                Cette formation permet aux candidats ayant un profil scientifique et/ou technique d’acquérir un métier et un emploi immédiat, les diplômés sont embauchés à 100% dans le mois qui suit l’obtention du diplôme.</p>
+            <p>
 
                 Seule formation en Europe à ce niveau dans la profession de l’Enveloppe du Bâtiment.</p>
         </div>
@@ -98,9 +101,11 @@
         <h3>Admission</h3>
         <x-trait-titre> </x-trait-titre>
         <div class="mt-4">
-            <p>La licence professionnelle est accessible aux étudiants ayant validé 120 crédits ECTS – 2e année de licence scientifique et/ou technique validée
+            <p>La licence professionnelle est accessible aux étudiants ayant validé 120 crédits ECTS – 2e année de licence scientifique et/ou technique validée</p>
+            <p>
 
-                DUT (diplôme universitaire de technologie) GC, GTE, SGM, GMP, etc.
+                DUT (diplôme universitaire de technologie) GC, GTE, SGM, GMP, etc.</p>
+            <p>
 
                 BTS (brevet de technicien supérieur) dans un domaine d’études compatible avec la mention demandée (CPI, Enveloppe du Bâtiment, Bâtiment, EEc, Construction métallique, etc.).​</p>
         </div>
