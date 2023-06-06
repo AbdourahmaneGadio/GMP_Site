@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,20 +33,47 @@
             <li>Mes Notes </li>
             <li> Mon emploi de temps </li>
             <li>Mes projets tutorés </li>
-            <li style="background:white; color:#606c38;"> Les offres d'Aletrnance</li>
+            <li style="background:white; color:#606c38;"> Les offres d'alternance</li>
             <li>Mes candidature</li>
         </ul>
 
 
 
 
+        <div class="container w-2/3 mx-auto my-4">
 
+            <!-- Filtres -->
 
+            <div class="flex my-5 items-center">
+                <span class="me-3">Filtrer par : </span>
+                <span class="me-3">Département</span>
+                <input type="text" name="inputDeptOffre" id="inputDeptOffre" minlength="5" maxlength="5">
+            </div>
 
+            <!-- Filtres -->
 
-
+            <!-- Offres -->
+            <div style="background-color: #E6E6E6" class="p-8 h-min mb-3">
+                <span>JUNIOR / EXPERIENCED SOFTWARE ENGINEER</span>
+                <div id="nomEntreprise" class="flex">
+                    <span>TREKEA SAS</span>
+                    <span>93700 DRANCY</span>
+                </div>
+                <div id="descriptionPoste">
+                    <span>Description du poste</span>
+                    <span>EXPERIENCED SOFTWARE ENGINEER – HYBRID CLOUD (REMOTE FRANCE)</span>
+                    <p>We design and market “FieldLogs”, an open Cloud, Mobile and Wearable
+                        platform used to digitize a wide set
+                        of enterprise technician-driven processes
+                        (Aviation, Oil&Gas, Asset Management, etc.).
+                    </p>
+                </div>
+            </div>
+            <!-- Offres -->
+        </div>
 
     </section>
+
 
 
 
