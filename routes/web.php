@@ -47,6 +47,12 @@ Route::get('/offresAlterance', function () {
 
 /*Fin de la partie Ee */
 
+/*profil -Espace Enseignant*/
+Route::get('/Ajoutnotes', function () {
+    return view('profile.Profil-Enseignant.Ajoutnotes');
+});
+/*Fin de la partie Ee */
+
 Route::get('/licencesPro', function () {
     return view('licencesPro');
 });
