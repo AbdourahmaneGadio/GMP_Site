@@ -40,40 +40,36 @@
     <h2>Ajouter des notes</h2>
 
     <form action="traitement_formulaire.php" method="POST">
-    <label for="classe">Classe :</label>
-    <select name="classe" id="classe">
-      <option value="classe1">LP MIE</option>
-      <option value="classe2">LP MIEF</option>
-      <option value="classe3">LP MRI</option>
-    </select>
-    <br><br>
-    
-    
-    <input type="text" name="nom" id="nom" placeholder="Nom*" require>
-    <br><br>
+    <input type="radio" name="classe" id="classe1" value="classe1" required>
+  <label for="classe1">LP MIE</label>
+  <br>
+  <input type="radio" name="classe" id="classe2" value="classe2">
+  <label for="classe2">LP MIEF</label>
+  <br>
+  <input type="radio" name="classe" id="classe3" value="classe3">
+  <label for="classe3">LP MRI</label>
+  <br><br>
 
-    
-    <input type="text" name="prenom" id="prenom" placeholder="Prénom*" require>
-    <br><br>
+  <input type="text" name="nom" id="nom" placeholder="Nom*" required>
+  <br><br>
 
-    
-    <input type="text" name="matiere" id="matiere" placeholder="Matière*" require>
-    <br><br>
-    
-  
-    <input type="number" name="note" id="note" placeholder="Note*" min="0" max="20" step="0.5" require>
-    <br><br>
-    
-    
-    <input type="number" name="coefficient" id="coefficient" placeholder="Coefficient*" min="1" step="1" require>
-    <br><br>
-    
-    
-    <textarea name="appreciation" id="appreciation" placeholder="Appréciation*" rows="4" cols="30" require></textarea>
-    <br><br>
-    
-    <input type="submit" value="Ajouter la note">
-  </form>
+  <input type="text" name="prenom" id="prenom" placeholder="Prénom*" required>
+  <br><br>
+
+  <input type="text" name="matiere" id="matiere" placeholder="Matière*" required>
+  <br><br>
+
+  <input type="number" name="note" id="note" placeholder="Note*" min="0" max="20" step="0.5" required>
+  <br><br>
+
+  <input type="number" name="coefficient" id="coefficient" placeholder="Coefficient*" min="1" step="1" required>
+  <br><br>
+
+  <textarea name="appreciation" id="appreciation" placeholder="Appréciation*" rows="4" cols="30" required></textarea>
+  <br><br>
+
+  <input type="submit" value="Ajouter la note">
+</form>
 </div>
 
     </section>
@@ -86,10 +82,52 @@
 
 </html>
 <style>
+/*FORM*/ 
+    ..Ajoutnotes {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-    .Ajoutnotes{
+  .Ajoutnotes h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
-    }
+  .Ajoutnotes label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .Ajoutnotes input[type="text"],
+  .Ajoutnotes input[type="number"],
+  .Ajoutnotes textarea {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .Ajoutnotes input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .Ajoutnotes input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+/*FIN FORM*/ 
 
     section {
         min-height: 30vw;
