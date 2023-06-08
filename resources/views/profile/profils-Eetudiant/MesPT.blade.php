@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mes projets tutorés</title>
 </head>
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -31,11 +31,11 @@
     <section>
 
         <ul class="listMenu">
-            <li>Mes Notes </li>
-            <li> Mon emploi de temps </li>
-            <li  style="background:white; color:#606c38;" >Mes projets tutorés </li>
-            <li>Les offres</li>
-            <li >Mes candidature</li>
+            <li><a href="Mesnotes">Mes Notes </a></li>
+            <li><a href="edt"> Mon emploi de temps </a> </li>
+            <li  style="background:white; color:#606c38;"  ><a href="MesPT">Mes projets tutorés </a>  </li>
+            <li> <a href="offresAlternance">Les offres</a></li>
+            <li><a href="Mescandidatures">Mes candidatures</a></li>
         </ul>
 
 

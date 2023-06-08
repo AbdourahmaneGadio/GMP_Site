@@ -30,11 +30,11 @@
     <section>
 
         <ul class="listMenu">
-            <li>Mes Notes </li>
-            <li> Mon emploi de temps </li>
-            <li>Mes projets tutorés </li>
-            <li style="background:white; color:#606c38;"> Les offres d'alternance</li>
-            <li>Mes candidature</li>
+            <li><a href="Mesnotes">Mes Notes </a> </li>
+            <li><a href="edt"> Mon emploi de temps </a> </li>
+            <li><a href="MesPT">Mes projets tutorés </a> </li>
+            <li style="background:white; color:#606c38;"><a href="offresAlternance">Les offres d'alternance </a> </li>
+            <li><a href="Mescandidatures">Mes candidatures</a></li>
         </ul>
 
 
@@ -53,6 +53,39 @@
             <!-- Filtres -->
 
             <!-- Offres -->
+            <div style="background-color: #E6E6E6" class="p-8 h-min mb-3">
+                <span>JUNIOR / EXPERIENCED SOFTWARE ENGINEER</span>
+                <div id="nomEntreprise" class="flex">
+                    <span>TREKEA SAS</span>
+                    <span>93700 DRANCY</span>
+                </div>
+                <div id="descriptionPoste">
+                    <span>Description du poste</span>
+                    <span>EXPERIENCED SOFTWARE ENGINEER – HYBRID CLOUD (REMOTE FRANCE)</span>
+                    <p>We design and market “FieldLogs”, an open Cloud, Mobile and Wearable
+                        platform used to digitize a wide set
+                        of enterprise technician-driven processes
+                        (Aviation, Oil&Gas, Asset Management, etc.).
+                    </p>
+                </div>
+            </div>
+
+            <div style="background-color: #E6E6E6" class="p-8 h-min mb-3">
+                <span>JUNIOR / EXPERIENCED SOFTWARE ENGINEER</span>
+                <div id="nomEntreprise" class="flex">
+                    <span>TREKEA SAS</span>
+                    <span>93700 DRANCY</span>
+                </div>
+                <div id="descriptionPoste">
+                    <span>Description du poste</span>
+                    <span>EXPERIENCED SOFTWARE ENGINEER – HYBRID CLOUD (REMOTE FRANCE)</span>
+                    <p>We design and market “FieldLogs”, an open Cloud, Mobile and Wearable
+                        platform used to digitize a wide set
+                        of enterprise technician-driven processes
+                        (Aviation, Oil&Gas, Asset Management, etc.).
+                    </p>
+                </div>
+            </div>
             <div style="background-color: #E6E6E6" class="p-8 h-min mb-3">
                 <span>JUNIOR / EXPERIENCED SOFTWARE ENGINEER</span>
                 <div id="nomEntreprise" class="flex">
@@ -120,7 +153,7 @@
     .lienFormation h2 {
         color: white;
         position: relative;
-        left: 7pc;
+        margin: auto 114px;
     }
 
     .listMenu {

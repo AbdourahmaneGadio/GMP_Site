@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mes candidatures</title>
 </head>
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -24,18 +23,18 @@
         <li> > </li>
         <li>ESPACE ETUDIANT </li>
         <li> > </li>
-        <li>Mes candidature</li>
+        <li>Mes candidatures</li>
     </ul>
 
 
     <section>
 
         <ul class="listMenu">
-            <li>Mes Notes </li>
-            <li> Mon emploi de temps </li>
-            <li>Mes projets tutorés </li>
-            <li>Les offres</li>
-            <li  style="background:white; color:#606c38;">Mes candidature</li>
+            <li><a href="Mesnotes">Mes Notes </a> </li>
+            <li><a href="edt"> Mon emploi de temps </a> </li>
+            <li><a href="MesPT">Mes projets tutorés </a> </li>
+            <li><a href="offresAlternance">Les offres </a> </li>
+            <li style="background:white; color:#606c38;"><a href="Mescandidatures">Mescandidatures</a></li>
         </ul>
 
 
@@ -94,7 +93,7 @@
     .lienFormation h2 {
         color: white;
         position: relative;
-        left: 7pc;
+        margin: auto 114px;
     }
 
     .listMenu {

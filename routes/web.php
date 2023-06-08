@@ -34,8 +34,11 @@ Route::get('/gmp', function () {
     return view('departementGMP');
 });
 /*profil -Espace Etudiant*/
-Route::get('/edt', function () {
+Route::get('/edt', function () { 
     return view('profile.profils-Eetudiant.edt');
+});
+Route::get('/MesPT', function () { 
+    return view('profile.profils-Eetudiant.MesPT');
 });
 
 Route::get('/Mesnotes', function () {
@@ -43,6 +46,9 @@ Route::get('/Mesnotes', function () {
 });
 Route::get('/offresAlternance', function () {
     return view('profile.profils-Eetudiant.offresAlternance');
+});
+Route::get('/Mescandidatures', function () {
+    return view('profile.profils-Eetudiant.Mescandidatures');
 });
 
 /*Fin de la partie Ee */

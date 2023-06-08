@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mes notes</title>
 </head>
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -30,13 +30,13 @@
     <section>
 
         <ul class="listMenu">
-            <li style="background:white; color:#606c38;">Mes Notes </li>
-            <li> Mon emploi de temps </li>
-            <li>Mes projets tutorés </li>
-            <li>Les offres</li>
-            <li>Mes candidature</li>
+            <li style="background:white; color:#606c38;"><a href="Mesnotes">Mes Notes </a></li>
+            <li><a href="edt"> Mon emploi de temps </a> </li>
+            <li><a href="MesPT">Mes projets tutorés <a></li>
+            <li> <a href="offresAlternance">Les offres</a></li>
+            <li><a href="Mescandidatures">Mescandidatures</a></li>
         </ul>
-        <div class="content">
+        <div class="container w-2/3 mx-auto my-4">
             <label>Choisir le semestre</label>
 
             <select style="   border: none;background: #80808040;width: 20%;" class="semestrechoice">
@@ -47,7 +47,7 @@
             <br>
 
             <table>
-             
+
                 <tr>
                     <th scope="col">mathématique</th>
                     <th scope="col">Physique</th>
@@ -74,7 +74,7 @@
                     <td>6,219</td>
                     <td>6,219</td>
                 </tr>
-             
+
             </table>
 
 
@@ -139,20 +139,26 @@
 
 
     }
-    table{
-        
-    }
-    td{
+
+    table {}
+
+    td {
+        border: 1px solid grey;
+        padding: 17px;
 
     }
-    th{
-        
+
+    th {
+        border: 1px solid grey;
+        padding: 17px;
     }
+
+    tr {}
 
     .lienFormation h2 {
         color: white;
         position: relative;
-        left: 7pc;
+        margin: auto 114px;
     }
 
     .listMenu {
@@ -172,7 +178,4 @@
         text-align: center;
 
     }
-
-
-    div.menu {}
 </style>
