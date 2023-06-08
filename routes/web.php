@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 Route::get('/gmp', function () {
     return view('departementGMP');
@@ -54,6 +54,9 @@ Route::get('/Ajoutnotes', function () {
 
 Route::get('/edtprofs', function () {
     return view('profile.Profil-Enseignant.edtprofs');
+});
+Route::get('/supportCours', function () {
+    return view('profile.Profil-Enseignant.supportCours');
 });
 /*Fin de la partie Ee */
 
