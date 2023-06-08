@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('offre', function (Blueprint $table) {
+            $table->foreign(['id_entreprise'], 'offre_entreprise_FK')->references(['id_entreprise'])->on('entreprise')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+            $table->foreign(['id_etudiant'], 'offre_etudiant0_FK')->references(['id_etudiant'])->on('etudiant')->onUpdate('NO ACTION')->onDelete('NO ACTION');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('offre', function (Blueprint $table) {
+            $table->dropForeign('offre_entreprise_FK');
+            $table->dropForeign('offre_etudiant0_FK');
+        });
+    }
+};
