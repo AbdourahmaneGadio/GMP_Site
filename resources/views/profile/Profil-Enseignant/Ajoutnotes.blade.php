@@ -59,21 +59,21 @@
         </div>
 
         <br><br>
+        <input type="hidden" name="id_enseignant" value="3">
 
-        <select name="idEtudiant" id="etudiant">
-        <option value="" selected>Etudiant</option>
-
+        <select name="id_etudiant" id="etudiant" required>
+          <option value="" selected>Etudiant</option>
           @foreach ($etudiants as $etudiant)
           <option value="{{$etudiant->id_etudiant}}">{{$etudiant->nom_etudiant}}</option>
           @endforeach
         </select>
-<br><br>
-<select name="idMatiere" id="matiere">
-  <option value="" selected>Matière</option>
+        <br><br>
+        <select name="id_matiere" id="matiere" required>
+          <option value="" selected>Matière</option>
           @foreach ($matieres as $matiere)
           <option value="{{$matiere->id_matiere}}">{{$matiere->nom_matiere}}</option>
           @endforeach
-        </select>        <br><br>
+        </select> <br><br>
 
         <input type="number" name="note" id="note" placeholder="Note*" min="0" max="20" step="0.5" required>
         <br><br>
