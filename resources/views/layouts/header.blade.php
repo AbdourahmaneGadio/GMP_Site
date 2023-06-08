@@ -30,7 +30,7 @@
                             <a href="#" class="text-[#606C38] dark:text-white hover:underline" aria-current="page">IUT</a>
                         </li>
                         <li>
-                            <a href="#" class="text-[#BC6C25] dark:text-white hover:underline">FORMATION</a>
+                            <a href="licencesPro" class="text-[#BC6C25] dark:text-white hover:underline">FORMATION</a>
                         </li>
                         <li>
                             <a href="#" class="text-[#BC6C25] dark:text-white hover:underline">SCOLARITÉ</a>
