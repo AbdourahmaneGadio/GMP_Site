@@ -9,7 +9,7 @@
         <!-- Email Address -->
         <div>
             <!-- <x-input-label for="email" :value="__('Email')" /> -->
-            <x-text-input id="email" class="block mt-1 w-full" type="email" style="background: #f3f4f6;border:none; padding:13px;border-radius:1px; outline:none;" placeholder="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" style="background: #f3f4f6;border:none; padding:13px;border-radius:1px; outline:none;" placeholder="Email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
         
