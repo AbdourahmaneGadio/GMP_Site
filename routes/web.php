@@ -41,3 +41,8 @@ Route::get('/licencesPro', function () {
 Route::get('/lp-mief', function () {
     return view('licencesPro.lpMief');
 });
+
+
+Route::get('/lp-mri', function () {
+    return view('licencesPro.lpMri');
+});
