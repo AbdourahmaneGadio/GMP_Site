@@ -33,7 +33,7 @@
             <li><a href="Mesnotes">Mes Notes </a></li>
             <li><a href="edt"> Mon emploi de temps </a> </li>
             <li style="background:white; color:#606c38;"><a href="MesPT">Mes projets tutorés </a> </li>
-            <li> <a href="offresAlternance">Les offres</a></li>
+            <li> <a href="offresAlternance">Les offres d'alternance</a></li>
             <li><a href="Mescandidatures">Mes candidatures</a></li>
         </ul>
 
