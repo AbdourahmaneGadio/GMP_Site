@@ -46,3 +46,9 @@ Route::get('/lp-mief', function () {
 Route::get('/lp-mri', function () {
     return view('licencesPro.lpMri');
 });
+
+/*Espace-Entreprise */
+Route::get('/AjouterPT', function () {
+    return view('profile.Espace-Entreprise.AjouterPT');
+});
+
