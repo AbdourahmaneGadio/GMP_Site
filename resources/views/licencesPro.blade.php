@@ -45,7 +45,7 @@
 
         <x-separateur> </x-separateur>
 
-        <x-lignesLicencesPro.ligneLpMief></x-lignesLicencesPro.ligneLpMief>
+        <x-lignesLicencesPro.ligneLpMie></x-lignesLicencesPro.ligneLpMie>
 
 
 
