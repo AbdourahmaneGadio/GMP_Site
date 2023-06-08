@@ -2,7 +2,7 @@
 <footer class="bg-white text-white" style="font-family: Poppins; font-size:medium;">
 
     <!-- Section de l'université -->
-    <section class="flex space-x-3 p-9 justify-between" style="background-color: #606C38">
+    <section class="flex space-x-3 p-9 justify-between" style="background-color: #606C38; font-family:poppins">
         <!-- Différents sites -->
 
         <div>
