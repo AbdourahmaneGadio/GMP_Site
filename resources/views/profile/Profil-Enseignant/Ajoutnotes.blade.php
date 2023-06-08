@@ -22,34 +22,40 @@
     <ul class="listLien">
         <li>ACCUEIL </li>
         <li> > </li>
-        <li>ESPACE ETUDIANT </li>
+        <li>ESPACE ENSEIGNANT</li>
         <li> > </li>
-        <li>MESNOTES</li>
+        <li>NOTES</li>
     </ul>
 
 
     <section>
 
         <ul class="listMenu">
-            <li style="background:white; color:#606c38;">Notes </li>
+            <li style="background:white; color:#606c38;"><a href="Ajoutnotes">Notes </a></li>
             <li> Emploi de temps </li>
             <li>Support de cours</li>
         </ul>
 
-        <div class="Ajoutnotes">
+        <div class="Ajoutnotes mx-auto my-7">
     <h2>Ajouter des notes</h2>
 
     <form action="traitement_formulaire.php" method="POST">
-    <input type="radio" name="classe" id="classe1" value="classe1" required>
-  <label for="classe1">LP MIE</label>
-  <br>
-  <input type="radio" name="classe" id="classe2" value="classe2">
-  <label for="classe2">LP MIEF</label>
-  <br>
-  <input type="radio" name="classe" id="classe3" value="classe3">
-  <label for="classe3">LP MRI</label>
-  <br><br>
 
+    <div>
+   <ul class="flex flex-row justify-center">
+    <li> <input type="radio" name="classe" id="classe1" value="classe1" required>
+  <label for="classe1">LP MIE</label></li>
+  <br>
+  <li> <input type="radio" name="classe" id="classe2" value="classe2">
+  <label for="classe2">LP MIEF</label></li>
+  <br>
+  <li> <input type="radio" name="classe" id="classe3" value="classe3">
+  <label for="classe3">LP MRI</label></li>
+</ul>
+  </div>
+
+  <br><br>
+  
   <input type="text" name="nom" id="nom" placeholder="Nom*" required>
   <br><br>
 
@@ -83,13 +89,13 @@
 </html>
 <style>
 /*FORM*/ 
-    ..Ajoutnotes {
+    .Ajoutnotes {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
     width: 400px;
-    margin: 0 auto;
     text-align: center;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
   }
 
   .Ajoutnotes h2 {
@@ -116,7 +122,7 @@
   }
 
   .Ajoutnotes input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #606C38;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -125,7 +131,7 @@
   }
 
   .Ajoutnotes input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #BC6C25;
   }
 /*FIN FORM*/ 
 
