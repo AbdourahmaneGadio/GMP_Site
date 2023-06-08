@@ -10,7 +10,7 @@
         <h1 class="text-[#606C38] p-1">Présentation</h1>
         <x-trait-titre/>
         <div class="aspect-w-16 aspect-h-9">
-            <iframe class="responsive-iframe pt-5 h-70 w-70 "src="https://www.youtube.com/embed/M7lc1UVf-VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="responsive-iframe m-auto pt-5 h-70 w-70 "src="https://www.youtube.com/embed/M7lc1UVf-VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     <div>
