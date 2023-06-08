@@ -27,16 +27,42 @@
     </ul>
 
 
-    <section id="section"> 
+    <section id="section">
 
-    @include('layouts.sidebarEtudiant')
+        @include('layouts.sidebarEtudiant')
 
+        <div class="container w-2/3 mx-auto my-4">
 
+<!-- Filtres -->
 
+<div class="flex my-5 items-center">
+    <span class="me-3">Filtrer par : </span>
+    <span class="me-3">Département</span>
+    <input type="text" name="inputDeptOffre" id="inputDeptOffre" minlength="5" maxlength="5">
+</div>
 
+<!-- Filtres -->
 
-
-
+<!-- Offres -->
+<div style="background-color: #E6E6E6" class="p-8 h-min mb-3 shadow-lg">
+    <span>JUNIOR / EXPERIENCED SOFTWARE ENGINEER</span>
+    <div id="nomEntreprise" class="flex">
+        <span style="color: #1813F4" class="me-3">TREKEA SAS</span>
+        <span style="color: #8988BC">93700 DRANCY</span>
+    </div>
+    <div id="descriptionPoste">
+        <div>
+        <span>Description du poste</span></div>
+        <div>
+        <span>EXPERIENCED SOFTWARE ENGINEER – HYBRID CLOUD (REMOTE FRANCE)</span></div>
+        <div>
+        <p>We design and market “FieldLogs”, an open Cloud, Mobile and Wearable
+            platform used to digitize a wide set
+            of enterprise technician-driven processes
+            (Aviation, Oil&Gas, Asset Management, etc.).
+        </p></div>
+    </div>
+</div>
 
 
 
