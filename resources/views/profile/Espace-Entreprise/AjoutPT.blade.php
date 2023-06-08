@@ -29,10 +29,7 @@
 
   <section id="section">
 
-    <ul class="listMenu">
-      <li style="background:white; color:#606c38;"><a href="AjoutPT">Ajouter un projet tutorés </a></li>
-      <li><a href="AjoutOA">Ajouter une offre d'alternance </a></li>
-    </ul>
+    @include('layouts.sidebarEntreprise')
 
     <div class="Ajoutnotes mx-auto my-7">
       <h2>Ajouter Un projet tutoré</h2>
@@ -40,7 +37,7 @@
       <form action="traitement_formulaire.php" method="POST">
 
 
-   
+
 
         <input type="text" name="titre" id="nom" placeholder="Titre" required>
         <br><br>

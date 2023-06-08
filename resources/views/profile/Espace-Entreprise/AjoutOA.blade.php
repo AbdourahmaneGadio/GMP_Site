@@ -28,11 +28,10 @@
 
 
     <section id="section">
+        
+     @include('layouts.sidebarEntreprise')
 
-        <ul class="listMenu">
-            <li><a href="AjoutPT">Ajouter un projet tutorés </a></li>
-            <li style="background:white; color:#606c38;"><a href="AjoutOA">Ajouter une offre d'alternance </a></li>
-        </ul>
+ 
 
         <div class="Ajoutnotes mx-auto my-7">
             <h2>Ajouter une offre d'alternance</h2>
