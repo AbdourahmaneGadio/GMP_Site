@@ -28,7 +28,7 @@
     </ul>
 
 
-    <section>
+    <section id="section">
     @include('layouts.sidebarProf')
 
 
@@ -124,18 +124,12 @@ h1{
         background-color: #f2f2f2;
     }
 
-    section {
-        min-height: 30vw;
-        height: 100%;
-        DISPLAY: flex;
-
-
-    }
+    
 
    
 /*FIN TABLE*/ 
 
-section {
+#section {
         min-height: 30vw;
         height: 100%;
         DISPLAY: flex;

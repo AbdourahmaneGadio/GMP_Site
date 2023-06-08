@@ -28,7 +28,7 @@
     </ul>
 
 
-    <section>
+    <section id="section">
 
      @include('layouts.sidebarProf')
 
@@ -131,7 +131,7 @@
   }
 /*FIN FORM*/ 
 
-    section {
+#section {
         min-height: 30vw;
         height: 100%;
         DISPLAY: flex;
