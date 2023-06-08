@@ -39,7 +39,7 @@ Route::get('/edt', function () {
 });
 
 Route::get('/Mesnotes', function () {
-    return view('profile.profils-Eetudiant.edt');
+    return view('profile.profils-Eetudiant.Mesnotes');
 });
 Route::get('/offresAlterance', function () {
     return view('profile.profils-Eetudiant.offresAlterance');

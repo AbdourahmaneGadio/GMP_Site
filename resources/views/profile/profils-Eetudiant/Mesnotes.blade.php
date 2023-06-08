@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +36,50 @@
             <li>Les offres</li>
             <li>Mes candidature</li>
         </ul>
+        <div class="content">
+            <label>Choisir le semestre</label>
 
+            <select style="   border: none;background: #80808040;width: 20%;" class="semestrechoice">
+                <option>S1</option>
+                <option>S2</option>
+            </select>
+            <br>
+            <br>
+
+            <table>
+             
+                <tr>
+                    <th scope="col">mathématique</th>
+                    <th scope="col">Physique</th>
+                    <th scope="col">Traveaux Pratique</th>
+                    <th scope="col">Traveaux Pratique</th>
+                </tr>
+                <tr>
+
+                    <td>7</td>
+                    <td>7</td>
+                    <td>4,569</td>
+                    <td>6,219</td>
+                </tr>
+                <tr>
+
+                    <td>7</td>
+                    <td>7</td>
+                    <td>7,223</td>
+                    <td>6,219</td>
+                </tr>
+                <tr>
+                    <td scope="row">Mia Oolong</td>
+                    <td>9</td>
+                    <td>6,219</td>
+                    <td>6,219</td>
+                </tr>
+             
+            </table>
+
+
+
+        </div>
 
 
 
@@ -69,6 +111,13 @@
 
     }
 
+    div.content {
+        margin: 46px;
+        width: 70%;
+    }
+
+    .semestrechoice {}
+
     ul.listLien {
         display: flex;
         padding: 18px;
@@ -89,6 +138,15 @@
         padding: 19px;
 
 
+    }
+    table{
+        
+    }
+    td{
+
+    }
+    th{
+        
     }
 
     .lienFormation h2 {
