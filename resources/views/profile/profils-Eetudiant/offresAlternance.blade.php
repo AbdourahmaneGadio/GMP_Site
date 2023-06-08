@@ -53,20 +53,23 @@
             <!-- Filtres -->
 
             <!-- Offres -->
-            <div style="background-color: #E6E6E6" class="p-8 h-min mb-3">
+            <div style="background-color: #E6E6E6" class="p-8 h-min mb-3 shadow-lg">
                 <span>JUNIOR / EXPERIENCED SOFTWARE ENGINEER</span>
                 <div id="nomEntreprise" class="flex">
-                    <span>TREKEA SAS</span>
-                    <span>93700 DRANCY</span>
+                    <span style="color: #1813F4" class="me-3">TREKEA SAS</span>
+                    <span style="color: #8988BC">93700 DRANCY</span>
                 </div>
                 <div id="descriptionPoste">
-                    <span>Description du poste</span>
-                    <span>EXPERIENCED SOFTWARE ENGINEER – HYBRID CLOUD (REMOTE FRANCE)</span>
+                    <div>
+                    <span>Description du poste</span></div>
+                    <div>
+                    <span>EXPERIENCED SOFTWARE ENGINEER – HYBRID CLOUD (REMOTE FRANCE)</span></div>
+                    <div>
                     <p>We design and market “FieldLogs”, an open Cloud, Mobile and Wearable
                         platform used to digitize a wide set
                         of enterprise technician-driven processes
                         (Aviation, Oil&Gas, Asset Management, etc.).
-                    </p>
+                    </p></div>
                 </div>
             </div>
             <!-- Offres -->
