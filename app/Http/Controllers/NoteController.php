@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Note;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\DB;
+
 class NoteController extends Controller
 {
     /**
@@ -12,7 +14,13 @@ class NoteController extends Controller
      */
     public function index()
     {
-        //
+        $etudiants = DB::table('etudiant')->get();
+        $matieres = DB::table('matiere')->get();
+
+        return view('profile.Profil-Enseignant.Ajoutnotes', [
+            'etudiants' => $etudiants,
+            'matieres' => $matieres,
+        ]);
     }
 
     /**
@@ -20,9 +28,9 @@ class NoteController extends Controller
      */
     public function create(Request $request)
     {
-         //  Store data in database
-      Note::create($request->all());
-      return back()->with('success', 'Your form has been submitted.');
+        //  Store data in database
+        Note::create($request->all());
+        return back()->with('success', 'Your form has been submitted.');
     }
 
     /**

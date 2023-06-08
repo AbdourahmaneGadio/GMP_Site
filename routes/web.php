@@ -49,9 +49,8 @@ Route::get('/offresAlterance', function () {
 /*Fin de la partie Ee */
 
 /*profil -Espace Enseignant*/
-Route::get('/Ajoutnotes', function () {
-    return view('profile.Profil-Enseignant.Ajoutnotes');
-});
+Route::get('/Ajoutnotes', [NoteController::class, 'index'])->name('Ajoutnotes.index');
+
 
 Route::post('/Ajoutnotes', [NoteController::class, 'create'])->name('Ajoutnotes.add');
 
