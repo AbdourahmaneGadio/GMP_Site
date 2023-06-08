@@ -44,7 +44,7 @@
             <div><span>NAVIGATION</span>
             </div>
 
-            <div class="mt-3"> <a href="{{ url('/dashboard') }}">
+            <div class="mt-3"> <a href="{{ url('/') }}">
                     <span>Université d’Evry Val d’Essonne</span></a></div>
 
 
@@ -52,7 +52,7 @@
                     <span>Présentation de l’IUT</span></a>
             </div>
 
-            <div class="mt-3"> <a href="{{ url('/dashboard') }}">
+            <div class="mt-3"> <a href="{{ url('/') }}">
                     <span>Liste des B.U.T</span></a></div>
 
 
@@ -60,13 +60,13 @@
                     <span>Liste des Licences Professionnelles</span></a></div>
 
             <div class="mt-3">
-                <a href="{{ url('/dashboard') }}">
+                <a href="{{ url('/') }}">
 
                     <span>Scolarité – Infos pratiques</span></a>
             </div>
 
 
-            <div class="mt-3"> <a href="{{ url('/dashboard') }}">
+            <div class="mt-3"> <a href="{{ url('/') }}">
                     <span>Vie étudiante</span></a></div>
         </div>
         <!-- Navigation -->
