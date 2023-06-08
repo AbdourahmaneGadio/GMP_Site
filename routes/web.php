@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\NoteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,11 +29,39 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 Route::get('/gmp', function () {
     return view('departementGMP');
 });
+/*profil -Espace Etudiant*/
+Route::get('/edt', function () {
+    return view('profile.profils-Eetudiant.edt');
+});
+
+Route::get('/Mesnotes', function () {
+    return view('profile.profils-Eetudiant.edt');
+});
+Route::get('/offresAlterance', function () {
+    return view('profile.profils-Eetudiant.offresAlterance');
+});
+
+/*Fin de la partie Ee */
+
+/*profil -Espace Enseignant*/
+Route::get('/Ajoutnotes', [NoteController::class, 'index'])->name('Ajoutnotes.index');
+
+
+Route::post('/Ajoutnotes', [NoteController::class, 'create'])->name('Ajoutnotes.add');
+
+
+Route::get('/edtprofs', function () {
+    return view('profile.Profil-Enseignant.edtprofs');
+});
+Route::get('/supportCours', function () {
+    return view('profile.Profil-Enseignant.supportCours');
+});
+/*Fin de la partie Ee */
 
 Route::get('/licencesPro', function () {
     return view('licencesPro');
@@ -50,4 +79,3 @@ Route::get('/lp-mri', function () {
 Route::get('/lp-mie', function () {
     return view('licencesPro.lpMie');
 });
-
