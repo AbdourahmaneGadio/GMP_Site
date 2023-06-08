@@ -48,7 +48,7 @@ Route::get('/lp-mri', function () {
 });
 
 /*Espace-Entreprise */
-Route::get('/AjouterPT', function () {
-    return view('profile.Espace-Entreprise.AjouterPT');
+Route::get('/AjoutPT', function () {
+    return view('profile.Espace-Entreprise.AjoutPT');
 });
 
