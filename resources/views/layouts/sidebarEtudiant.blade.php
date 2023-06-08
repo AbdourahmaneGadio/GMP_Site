@@ -1,6 +1,6 @@
 <ul class="listMenu">
     <li class="{{ (request()->is('Mesnotes')) ? 'bg-white text-lime-800' : '' }}">
-        <a href="{{url('Mesnotes')}}">Mes Notes </a>
+        <a href="{{url('Mesnotes')}}">Mes notes </a>
     </li>
     <li class="{{ (request()->is('edt')) ? 'bg-white text-lime-800' : '' }}">
         <a href="{{url('edt')}}"> Mon emploi de temps </a>
