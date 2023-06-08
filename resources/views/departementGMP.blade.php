@@ -47,28 +47,19 @@
         <h3>Les formations du département GMP</h3>
         <x-trait-titre> </x-trait-titre>
 
+        <x-lignesLicencesPro.ligneLpMri></x-lignesLicencesPro.ligneLpMri>
 
-        <div class="flex mt-8 h-40" style="background-color: #DDA15E; border-radius:46px;">
-            <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
-            <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
-        </div>
+
         <x-separateur> </x-separateur>
 
-        <div class="flex mt-8 h-40" style="background-color: #DDA15E; border-radius:46px;">
-            <a href="{{ url('/lp-mief') }}">
-                <div class="text-center m-auto">
-                    <span>LP Métiers du BTP : bâtiment et construction – Parcours : Management et ingénierie des entreprises de façades</span>
-                </div>
-                <div class="m-auto"><img src="" alt="Image de la licence professionnelle MIEF" srcset="">
-            </a>
-        </div>
 
-        </div>
+        <x-lignesLicencesPro.ligneLpMief></x-lignesLicencesPro.ligneLpMief>
+
         <x-separateur> </x-separateur>
-        <div class="flex mt-8 h-40 mb-8" style="background-color: #DDA15E; border-radius:46px;">
-            <div class="m-auto"><img src="" alt="Image de la licence professionnelle MRI" srcset=""></div>
-            <div class="text-center m-auto"><span>LP Métiers de l’industrie : mécatronique, robotique – Mécatronique – Robotique Intelligence (M.R.I)</span></div>
-        </div>
+
+        <x-lignesLicencesPro.ligneLpMief></x-lignesLicencesPro.ligneLpMief>
+
+
 
     </section>
     <!-- Les formations du département GMP -->
