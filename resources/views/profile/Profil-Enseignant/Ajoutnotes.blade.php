@@ -43,7 +43,7 @@
         </ul>
     </div>
 @endif
-    <form action="{{ url('Ajoutnotes') }}" method="POST">
+    <form action="{{ route('Ajoutnotes.add') }}" method="POST">
     @csrf
     <div>
    <ul class="flex flex-row justify-center">

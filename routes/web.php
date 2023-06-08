@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\NoteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,7 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 Route::get('/gmp', function () {
     return view('departementGMP');
@@ -52,9 +53,7 @@ Route::get('/Ajoutnotes', function () {
     return view('profile.Profil-Enseignant.Ajoutnotes');
 });
 
-Route::post('/Ajoutnotes', function () {
-    return view('profile.Profil-Enseignant.Ajoutnotes');
-});
+Route::post('/Ajoutnotes', [NoteController::class, 'create'])->name('Ajoutnotes.add');
 
 
 Route::get('/edtprofs', function () {
@@ -81,4 +80,3 @@ Route::get('/lp-mri', function () {
 Route::get('/lp-mie', function () {
     return view('licencesPro.lpMie');
 });
-
