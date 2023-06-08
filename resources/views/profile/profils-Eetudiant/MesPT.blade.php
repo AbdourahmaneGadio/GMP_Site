@@ -94,9 +94,8 @@
     .lienFormation h2 {
         color: white;
         position: relative;
-        left: 7pc;
+        margin: auto 114px;
     }
-
     .listMenu {
 
         width: 18%;
