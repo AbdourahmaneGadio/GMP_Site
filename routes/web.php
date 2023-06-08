@@ -51,6 +51,10 @@ Route::get('/offresAlterance', function () {
 Route::get('/Ajoutnotes', function () {
     return view('profile.Profil-Enseignant.Ajoutnotes');
 });
+
+Route::get('/edtprofs', function () {
+    return view('profile.Profil-Enseignant.edtprofs');
+});
 /*Fin de la partie Ee */
 
 Route::get('/licencesPro', function () {
