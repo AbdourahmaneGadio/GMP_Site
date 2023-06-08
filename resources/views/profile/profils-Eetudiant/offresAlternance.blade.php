@@ -27,7 +27,7 @@
     </ul>
 
 
-    <section>
+    <section id="section">
 
         <ul class="listMenu">
             <li><a href="Mesnotes">Mes Notes </a> </li>
@@ -123,7 +123,7 @@
 
 </html>
 <style>
-    section {
+    #section {
         min-height: 30vw;
         height: 100%;
         DISPLAY: flex;

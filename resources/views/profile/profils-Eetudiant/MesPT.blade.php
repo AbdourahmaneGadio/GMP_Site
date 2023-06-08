@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,16 +23,16 @@
         <li> > </li>
         <li>ESPACE ETUDIANT </li>
         <li> > </li>
-        <li>Mes projets  tutorés</li>
+        <li>Mes projets tutorés</li>
     </ul>
 
 
-    <section>
+    <section id="section">
 
         <ul class="listMenu">
             <li><a href="Mesnotes">Mes Notes </a></li>
             <li><a href="edt"> Mon emploi de temps </a> </li>
-            <li  style="background:white; color:#606c38;"  ><a href="MesPT">Mes projets tutorés </a>  </li>
+            <li style="background:white; color:#606c38;"><a href="MesPT">Mes projets tutorés </a> </li>
             <li> <a href="offresAlternance">Les offres</a></li>
             <li><a href="Mescandidatures">Mes candidatures</a></li>
         </ul>
@@ -61,7 +60,7 @@
 
 </html>
 <style>
-    section {
+    #section {
         min-height: 30vw;
         height: 100%;
         DISPLAY: flex;
@@ -96,6 +95,7 @@
         position: relative;
         margin: auto 114px;
     }
+
     .listMenu {
 
         width: 18%;

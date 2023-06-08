@@ -27,7 +27,7 @@
     </ul>
 
 
-    <section>
+    <section id="section">
 
         <!-- <ul class="listMenu">
             <li>Mes Notes </li>
@@ -40,7 +40,7 @@
             <li><a href="Mesnotes">Mes Notes </a> </li>
             <li style="background:white; color:#606c38;"><a href="edt"> Mon emploi de temps </a> </li>
             <li><a href="MesPT">Mes projets tutorés </a> </li>
-            <li><a href="offresAlternance">Les offres d'alternance </a> </li>
+            <li><a href="offresAlternance">Les offres d'alternance </a></li>
             <li><a href="Mescandidatures">Mes candidatures</a></li>
         </ul>
         <div class="container w-2/3 mx-auto my-4">
@@ -138,8 +138,7 @@
     th {
         background-color: #f2f2f2;
     }
-
-    section {
+    #section {
         min-height: 30vw;
         height: 100%;
         DISPLAY: flex;
@@ -192,7 +191,4 @@
         text-align: center;
 
     }
-
-
-    div.menu {}
 </style>
