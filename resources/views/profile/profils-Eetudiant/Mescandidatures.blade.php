@@ -29,13 +29,7 @@
 
     <section id="section"> 
 
-        <ul class="listMenu">
-            <li><a href="Mesnotes">Mes Notes </a> </li>
-            <li><a href="edt"> Mon emploi de temps </a> </li>
-            <li><a href="MesPT">Mes projets tutorés </a> </li>
-            <li><a href="offresAlternance">Les offres d'alternance </a> </li>
-            <li style="background:white; color:#606c38;"><a href="Mescandidatures">Mescandidatures</a></li>
-        </ul>
+    @include('layouts.sidebarEtudiant')
 
 
 
