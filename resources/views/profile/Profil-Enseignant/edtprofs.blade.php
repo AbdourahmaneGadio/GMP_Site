@@ -29,12 +29,8 @@
 
 
     <section>
+    @include('layouts.sidebarProf')
 
-        <ul class="listMenu">
-            <li><a href="Ajoutnotes">Notes </a></li>
-            <li style="background:white; color:#606c38;"><a href="edtprofs">Emploi du temps </li>
-            <li>Support de cours</li>
-        </ul>
 
         <div class="container w-2/3 mx-auto my-7">
             <h1>Mon emploi du temps</h1>

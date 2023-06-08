@@ -30,11 +30,8 @@
 
     <section>
 
-        <ul class="listMenu">
-            <li style="background:white; color:#606c38;"><a href="Ajoutnotes">Notes </a></li>
-            <li> Emploi de temps </li>
-            <li>Support de cours</li>
-        </ul>
+    @include('layouts.sidebarProf')
+
 
         <div class="Ajoutnotes mx-auto my-7">
     <h2>Ajouter des notes</h2>
