@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 Route::get('/gmp', function () {
     return view('departementGMP');
@@ -51,4 +51,6 @@ Route::get('/lp-mri', function () {
 Route::get('/AjoutPT', function () {
     return view('profile.Espace-Entreprise.AjoutPT');
 });
-
+Route::get('/AjoutOA', function () {
+    return view('profile.Espace-Entreprise.AjoutOA');
+});
