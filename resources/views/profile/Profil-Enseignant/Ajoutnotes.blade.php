@@ -63,9 +63,6 @@
 
         <select name="id_etudiant" id="etudiant" required>
           <option value="" selected>Etudiant</option>
-          @foreach ($etudiants as $etudiant)
-          <option value="{{$etudiant->id_etudiant}}">{{$etudiant->nom_etudiant}}</option>
-          @endforeach
         </select>
         <br><br>
         <select name="id_matiere" id="matiere" required>
