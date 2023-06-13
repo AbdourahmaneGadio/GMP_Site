@@ -59,7 +59,7 @@
         </div>
 
         <br><br>
-        <input type="hidden" name="id_enseignant" value="3">
+        <input type="hidden" name="id_enseignant" value="{{auth()->id();}}">
 
         <select name="id_etudiant" id="etudiant" required>
           <option value="" selected>Etudiant</option>
