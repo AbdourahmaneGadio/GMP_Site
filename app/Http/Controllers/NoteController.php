@@ -18,7 +18,6 @@ class NoteController extends Controller
         $matieres = DB::table('matiere')->get();
 
         return view('profile.Profil-Enseignant.Ajoutnotes', [
-            'etudiants' => $etudiants,
             'matieres' => $matieres,
         ]);
     }
