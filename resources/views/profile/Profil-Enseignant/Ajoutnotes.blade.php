@@ -44,15 +44,15 @@
         @csrf
         <div>
           <ul class="flex flex-row justify-center">
-            <li> <input type="radio" name="classe" class="choixClasse" id="classe1" value="classe1" required>
+            <li> <input type="radio" name="classe" class="choixClasse" id="classe1" value="1" required>
               <label for="classe1">LP MIE</label>
             </li>
             <br>
-            <li> <input type="radio" name="classe" class="choixClasse" id="classe2" value="classe2">
+            <li> <input type="radio" name="classe" class="choixClasse" id="classe2" value="2">
               <label for="classe2">LP MIEF</label>
             </li>
             <br>
-            <li> <input type="radio" name="classe" class="choixClasse" id="classe3" value="classe3">
+            <li> <input type="radio" name="classe" class="choixClasse" id="classe3" value="3">
               <label for="classe3">LP MRI</label>
             </li>
           </ul>
@@ -96,7 +96,7 @@
   <script>
     jQuery(document).ready(function() {
       jQuery('.choixClasse').click(function(e) {
-        var $idClasseChoisie = $(this).attr('id');
+        var $idClasseChoisie = $(this).val();
 
         //  e.preventDefault();
         $.ajaxSetup({
@@ -105,7 +105,7 @@
           }
         });
         jQuery.ajax({
-          url: "{{route('Ajoutnotes.show', ['idClasse' => 2])}}",
+          url: "/Ajoutnotes/showClasse" + $idClasseChoisie,
           method: 'get',
           success: function(result) {
             var optionDeBase = $('<option></option>').attr("value", "").text("Etudiant");
@@ -115,8 +115,8 @@
             $.each(result, function(index, element) {
               var nomEtudiant = element.nom_etudiant;
               var idEtudiant = element.id_etudiant;
-            var optionEtudiant = $('<option></option>').attr("value", idEtudiant).text(nomEtudiant);
-            $("#etudiant").append(optionEtudiant);
+              var optionEtudiant = $('<option></option>').attr("value", idEtudiant).text(nomEtudiant);
+              $("#etudiant").append(optionEtudiant);
             });
 
 
