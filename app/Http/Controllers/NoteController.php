@@ -14,7 +14,7 @@ class NoteController extends Controller
      */
     public function index()
     {
-        $etudiants = DB::table('etudiant')->get();
+        $etudiants = DB::table('etudiant')->where('id_classe', '1')->get();
         $matieres = DB::table('matiere')->get();
 
         return view('profile.Profil-Enseignant.Ajoutnotes', [
@@ -44,9 +44,10 @@ class NoteController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Note $note)
+    public function show(Note $note, $idClasse)
     {
-        //
+        $etudiants = DB::table('etudiant')->where('id_classe', $idClasse)->get();
+        return $etudiants;
     }
 
     /**

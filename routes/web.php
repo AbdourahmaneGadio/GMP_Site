@@ -54,6 +54,7 @@ Route::get('/Ajoutnotes', [NoteController::class, 'index'])->name('Ajoutnotes.in
 
 Route::post('/Ajoutnotes', [NoteController::class, 'create'])->name('Ajoutnotes.add');
 
+Route::get('/Ajoutnotes/showClasse{idClasse}', [NoteController::class, 'show'])->name('Ajoutnotes.show');
 
 Route::get('/edtprofs', function () {
     return view('profile.Profil-Enseignant.edtprofs');
