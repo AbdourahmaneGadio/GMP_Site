@@ -44,28 +44,25 @@
         @csrf
         <div>
           <ul class="flex flex-row justify-center">
-            <li> <input type="radio" name="classe" id="classe1" value="classe1" required>
+            <li> <input type="radio" name="classe" class="choixClasse" id="classe1" value="1" required>
               <label for="classe1">LP MIE</label>
             </li>
             <br>
-            <li> <input type="radio" name="classe" id="classe2" value="classe2">
+            <li> <input type="radio" name="classe" class="choixClasse" id="classe2" value="2">
               <label for="classe2">LP MIEF</label>
             </li>
             <br>
-            <li> <input type="radio" name="classe" id="classe3" value="classe3">
+            <li> <input type="radio" name="classe" class="choixClasse" id="classe3" value="3">
               <label for="classe3">LP MRI</label>
             </li>
           </ul>
         </div>
 
         <br><br>
-        <input type="hidden" name="id_enseignant" value="3">
+        <input type="hidden" name="id_enseignant" value="{{auth()->id();}}">
 
         <select name="id_etudiant" id="etudiant" required>
           <option value="" selected>Etudiant</option>
-          @foreach ($etudiants as $etudiant)
-          <option value="{{$etudiant->id_etudiant}}">{{$etudiant->nom_etudiant}}</option>
-          @endforeach
         </select>
         <br><br>
         <select name="id_matiere" id="matiere" required>
@@ -91,7 +88,43 @@
   </section>
 
 
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  <script>
+    jQuery(document).ready(function() {
+      jQuery('.choixClasse').click(function(e) {
+        var $idClasseChoisie = $(this).val();
 
+        //  e.preventDefault();
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+          }
+        });
+        jQuery.ajax({
+          url: "/Ajoutnotes/showClasse" + $idClasseChoisie,
+          method: 'get',
+          success: function(result) {
+            var optionDeBase = $('<option></option>').attr("value", "").text("Etudiant");
+            $("#etudiant").empty().append(optionDeBase);
+
+            // Les étudiants
+            $.each(result, function(index, element) {
+              var nomEtudiant = element.nom_etudiant;
+              var idEtudiant = element.id_etudiant;
+              var optionEtudiant = $('<option></option>').attr("value", idEtudiant).text(nomEtudiant);
+              $("#etudiant").append(optionEtudiant);
+            });
+
+
+
+
+
+          }
+        });
+      });
+    });
+  </script>
 </body>
 @include('layouts.footer')
 
