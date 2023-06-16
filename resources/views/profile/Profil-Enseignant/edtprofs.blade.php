@@ -88,8 +88,49 @@
 
             </table>
 
-        </div>
+        
+            <br><br>
+            <h1>Dépôt de l'emploi du temps</h1>
+            <br>
+            <div class="depot" >
+        
 
+    <br>
+
+  <form action="traitement.php" method="POST" enctype="multipart/form-data">
+  <div>
+  <label for="pdf">Classe :</label>
+  <ul class="flex flex-row justify-center">
+        <li>
+          <input type="radio" name="classe" id="classe1" value="classe1" required>
+          <label for="classe1">LP MIE</label>
+        </li>
+        <li>
+          <input type="radio" name="classe" id="classe2" value="classe2">
+          <label for="classe2">LP MIEF</label>
+        </li>
+        <li>
+          <input type="radio" name="classe" id="classe3" value="classe3">
+          <label for="classe3">LP MRI</label>
+        </li>
+        <li>
+          <input type="radio" name="classe" id="classe4" value="classe4">
+          <label for="classe4">BUT GMP</label>
+        </li>
+      </ul>
+  </div>
+
+    <br><br>
+
+    <label for="pdf">Fichier PDF :</label>
+    <input type="file" id="pdf" name="pdf" accept="application/pdf">
+
+    <br><br>
+
+    <input type="submit" value="Déposer">
+  </form>
+</div>
+</div>
     </section>
 
 
@@ -100,6 +141,7 @@
 
 </html>
 <style>
+
   /*TABLE*/ 
 h1{
     color: #333333;
@@ -128,12 +170,66 @@ h1{
 
    
 /*FIN TABLE*/ 
+/*DEPOT*/ 
+ul.flex {
+    margin: 0;
+    padding: 0;
+  }
 
+  ul.flex li {
+    margin: 1px; 
+  }
+    .depot {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    width: 450px;
+    text-align: left;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    
+  }
+
+  .depot h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .depot label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .depot input[type="text"],
+  .depot input[type="number"],
+  .depot textarea {
+    width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .depot input[type="submit"] {
+    background-color: #606C38;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .depot input[type="submit"]:hover {
+    background-color: #BC6C25;
+  }
+  /*FIN DEPOT*/ 
 #section {
         min-height: 30vw;
         height: 100%;
         DISPLAY: flex;
-
+        
 
     }
 
