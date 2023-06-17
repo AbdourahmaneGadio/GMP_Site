@@ -55,7 +55,6 @@ Route::get('/Mescandidatures', function () {
 
 /*Fin de la partie Ee */
 
-/*Fin de la partie Ee */
 
 /*profil -Espace Enseignant*/
 Route::get('/Ajoutnotes', [NoteController::class, 'index'])->name('Ajoutnotes.index');
@@ -71,7 +70,7 @@ Route::get('/edtprofs', function () {
 Route::get('/supportCours', function () {
     return view('profile.Profil-Enseignant.supportCours');
 });
-/*Fin de la partie Ee */
+/*Fin de la partie profil -Espace Enseignant*/
 
 Route::get('/licencesPro', function () {
     return view('licencesPro');
