@@ -74,7 +74,7 @@
         <!-- Logo URL:asset('assets/images/logo/logo_gmp.png') -->
 
         <div>
-            <img src="{{URL::asset('assets/images/logo/LOGO_FOOTER.png')}}" alt="Logo GMP" srcset="" class="h-20">
+            <img src="{{URL::asset('assets/images/logo/LOGO_FOOTER.png')}}" alt="Logo GMP" srcset="" class="logo_footer">
         </div>
         <!-- Logo -->
 
@@ -104,7 +104,7 @@
 <!-- Footer -->
 <!-- Taille logo -->
 <style>
-    .h-20 {
+    .logo_footer {
         height: 300px; /* Ajuste la valeur pour augmenter ou réduire la taille du logo */
     }
 </style>
