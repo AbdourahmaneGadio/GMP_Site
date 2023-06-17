@@ -15,7 +15,7 @@ class supportCours extends Controller
     public function index()
     {
         // $etudiants = DB::table('etudiant')->where('id_classe', '1')->get();
-        $cours = DB::table('cours')->where('idcours', '1')->get();
+        $cours = DB::table('cours')->where('idCours', '1')->get();
         $matieres = DB::table('matiere')->get();
 
         return view('profile.Profil-Enseignant.supportCours', [
@@ -62,7 +62,7 @@ class supportCours extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Cours $cours)
+    public function update(Request $request, cours $cours)
     {
         //
     }
@@ -70,7 +70,7 @@ class supportCours extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Cours $cours)
+    public function destroy(cours $cours)
     {
         //
     }
